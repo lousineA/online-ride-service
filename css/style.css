@@ -205,49 +205,49 @@ h2{
 
 .card__header{
     background-color:#FF7A50;
-    
-    
-}
-
-span.eco {
     color: #F8F8F8;
-    margin-right: 20rem;
     
-
+    
 }
 
 
-.price__1{
-    display: block;
-    color: #F8F8F8 ;
-    font-size: 2.6rem ;
-    margin-top: 1.5rem;
-    display:inline-block;
+.plan__introduction{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+} 
+
+
+
+.plan__price{
+    
+    font-size: 3rem ;
+    
+}
+.plan__billing-cycle{
+
+    font-size: 1.4rem;
    
-    
 }
-.price__2{
+
+
+.plan__description{
     display: block;
-    
-    color:#F8F8F8;
-    margin: 0.8rem 0rem;
-   
-}
-
-
-.currency{
-    font-size: 1rem;
+    margin-top: 1rem;
     
     
 }
 
 /* باید زمانی که  صفحه  کش میاد کادر ها از حالت زیر هم  بیان کنار هم  */
 
-@media screen and (min-width:1024px){
+/* @media screen and (min-width:1024px){
 
     .block-plan{
         grid-template-columns: repeat(3,1fr);
     }
 
 }
-
+ */

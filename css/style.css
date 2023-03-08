@@ -172,3 +172,82 @@ h2{
     }
     
 }
+
+/* Plan */
+
+.block-plan{
+    margin-top: 3rem;
+    display: grid;
+    gap: 2rem 3rem ;
+}
+
+.plan{
+    /* background-color: #aa9696; */
+    max-width: 500px;
+}
+
+
+.card{
+
+    border-radius:20px;
+    overflow: hidden;
+    /* background-color: #d7aec6; */
+    box-shadow:  0 0 20px 5px #c5bcbc;
+}
+
+/* چون این دو تا کلاس مربوط به 2 تا دیو جداگانه هست باید ویرگول بزاریم  
+اگر مربوط به 1 دئو می بودن می تونستیم بدون ویرگول بنویسیم */
+.card__header,.card__body{
+
+    padding:0.5rem 2.5rem;
+}
+
+
+.card__header{
+    background-color:#FF7A50;
+    
+    
+}
+
+span.eco {
+    color: #F8F8F8;
+    margin-right: 20rem;
+    
+
+}
+
+
+.price__1{
+    display: block;
+    color: #F8F8F8 ;
+    font-size: 2.6rem ;
+    margin-top: 1.5rem;
+    display:inline-block;
+   
+    
+}
+.price__2{
+    display: block;
+    
+    color:#F8F8F8;
+    margin: 0.8rem 0rem;
+   
+}
+
+
+.currency{
+    font-size: 1rem;
+    
+    
+}
+
+/* باید زمانی که  صفحه  کش میاد کادر ها از حالت زیر هم  بیان کنار هم  */
+
+@media screen and (min-width:1024px){
+
+    .block-plan{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+

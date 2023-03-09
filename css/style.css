@@ -87,7 +87,7 @@ h2{
 }
 
 .btn--block{
-    width: 50%;
+    width: 100%;
     font-size: 1.6rem;
 }
 
@@ -177,14 +177,15 @@ h2{
 /* Plan */
 
 .block-plan{
-    margin-top: 3rem;
+    margin-top: 6rem;
     display: grid;
-    gap: 2rem 3rem ;
+    gap: 2rem 4rem ;
 }
 
 .plan{
     /* background-color: #aa9696; */
-    max-width: 500px;
+    max-width: 450px;
+    transition: ease-in-out 2s;
 }
 
 .plan .btn--block{
@@ -204,7 +205,7 @@ h2{
 اگر مربوط به 1 دئو می بودن می تونستیم بدون ویرگول بنویسیم */
 .card__header,.card__body{
 
-    padding:0.5rem 2.5rem;
+    padding:3rem 2.5rem;
 }
 
 
@@ -266,13 +267,25 @@ background-color:var(--color-secondary-dark);
 
     .block-plan{
         grid-template-columns: repeat(3,1fr);
+        margin-left:7rem ;
     }
 
 }
 
-.plan .btn--block{
+.card--primary{
 
-  
+   transform: scale(1.1);  
+}
+
+
+.card--primary:hover{
+    transform: scale(1.08);
+    
+}
+
+.plan:hover{
+
+    transform: scale(1.05);
 }
 
 

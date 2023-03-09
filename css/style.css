@@ -72,11 +72,12 @@ h2{
     text-align: center;
     white-space:nowrap;
     font-size: 1.4rem;
+    
 
 }
 
 .btn--primary{
-    background-color: var(--color-imary);
+    background-color: var(--color-primary);
     color:var(--color-white);
 }
 
@@ -85,9 +86,8 @@ h2{
     color:var(--color-white)
 }
 
-.btn-block{
-
-    width: 100%;
+.btn--block{
+    width: 50%;
     font-size: 1.6rem;
 }
 
@@ -98,7 +98,7 @@ h2{
     font-size: 1.6rem; }
     /* اندازه دکمه روی صفحه بزرگتر   */
 
-    .btn-block{
+    .btn--block{
         font-size: 2rem;
     }    
 
@@ -160,8 +160,9 @@ h2{
 }
 
 .list--tick .list__item{
-    background-color: #e9d4cd;
+    /* background-color: #e9d4cd; */
     margin-bottom: 20px;
+    margin-top:2rem;
     /* display:inline-block; */
     margin-right: 3rem;
 }
@@ -186,6 +187,10 @@ h2{
     max-width: 500px;
 }
 
+.plan .btn--block{
+
+   margin-top: 10rem;
+}
 
 .card{
 
@@ -203,13 +208,27 @@ h2{
 }
 
 
+
+
 .card__header{
-    background-color:#FF7A50;
     color: #F8F8F8;
     
     
 }
 
+.card--secondary .card__header{
+background-color:var(--color-secondary-dark);
+}
+
+.card--primary .card__header{
+    background-color:#FF7A50; 
+
+}
+
+.card--special .card__header{
+
+    background-color: var(--color-secondary-dark);
+}
 
 .plan__introduction{
 
@@ -243,11 +262,17 @@ h2{
 
 /* باید زمانی که  صفحه  کش میاد کادر ها از حالت زیر هم  بیان کنار هم  */
 
-/* @media screen and (min-width:1024px){
+@media screen and (min-width:1024px){
 
     .block-plan{
         grid-template-columns: repeat(3,1fr);
     }
 
 }
- */
+
+.plan .btn--block{
+
+  
+}
+
+

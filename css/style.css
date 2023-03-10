@@ -174,7 +174,7 @@ h2{
     
 }
 
-/* Plan * مهم است/ 
+/* Plan */ 
 
 .block-plan{
     margin-top: 6rem;
@@ -185,7 +185,7 @@ h2{
 }
 
 .plan{
-    
+    /* background-color: #aa9696; */
     max-width: 450px;
     transition: ease-in-out 2s;
 }

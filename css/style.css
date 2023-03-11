@@ -358,6 +358,55 @@ background-color:var(--color-secondary-dark);
 .contact-us{
 
     padding: 2.5rem;
+    display: grid;
+}
+
+
+@media screen and(min-width:1024px) {
+
+.contact-us{
+grid-template-areas: 
+
+"contact us text"
+"form nav"
+"form map"
+"form svg";
+
+grid-template-columns: 30fr 70fr;
+
+}
+
+.contact-us__info-text{
+    grid-area:info-text;
+}
+
+.contact-us__svg{
+
+    grid-area:svg ;
+}
+
+.contact-us__nav{
+    grid-area: nav;
+}
+
+.contact_us__map {
+    grid-area: map;
+    display:block;
+    
+}
+
+.form__title{
+    grid-area: form;
+}
+
+
+
+}
+
+
+
+.contact_us__map{
+    display: none;
 }
 
 .contact-us__svg{

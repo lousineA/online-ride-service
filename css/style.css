@@ -27,6 +27,7 @@ html{
 body{
     color:var(--body-color);
     font-size: 1.4rem;
+    line-height: 3rem;
     
 }
 
@@ -42,6 +43,7 @@ h1{
 
 h2{
     font-size: 2.2rem;
+    margin-bottom:1.5rem ;
 
 }
 
@@ -292,6 +294,59 @@ background-color:var(--color-secondary-dark);
 
 
 .container{
-    /* max-width: 1140px; */
+    max-width: 1140px;
     margin: 0 auto;
+}
+
+
+.feature{
+    display:grid;
+    
+    
+}
+
+@media screen and (min-width:1024px){
+
+    .feature{
+
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+
+    .feature__pic{
+        order:2;
+        margin-bottom:0;
+        mar
+    }
+    .feature__detail{
+        order: 1;
+    }
+}
+
+.feature__text{
+
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.feature .btn{
+
+    padding:1.5rem 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+}
+
+.feature__pic > img {
+    width: 100%;
+    height: auto;
+    margin-right: 80px;
+}
+
+.feature__pic{
+    margin-bottom: 2.5rem;
+}
+
+.feature__detail{
+
+    margin-left: 40px;
 }

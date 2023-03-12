@@ -315,7 +315,7 @@ background-color:var(--color-secondary-dark);
     .feature__pic{
         order:2;
         margin-bottom:0;
-        mar
+        
     }
     .feature__detail{
         order: 1;
@@ -361,36 +361,44 @@ background-color:var(--color-secondary-dark);
     display: grid;
 }
 
+.contact-us__map{
+    display: none;
+}
 
-@media screen and(min-width:1024px) {
+
+@media screen and (min-width:1024px) {
 
 .contact-us{
 grid-template-areas: 
 
-"contact us text"
-"form nav"
+/* "contact us text" */
+"form icons"
 "form map"
-"form svg";
+"form social";
 
 grid-template-columns: 30fr 70fr;
 
 }
+.contact-us__map{
+    display: block;
+}
+
 
 .contact-us__info-text{
     grid-area:info-text;
 }
 
-.contact-us__svg{
+.contact-us__social{
 
-    grid-area:svg ;
+    grid-area:social;
 }
 
-.contact-us__nav{
-    grid-area: nav;
+.contact-us__icons{
+    grid-area:icons;
 }
 
 .contact_us__map {
-    grid-area: map;
+    grid-area:map;
     display:block;
     
 }
@@ -405,25 +413,55 @@ grid-template-columns: 30fr 70fr;
 
 
 
-.contact_us__map{
-    display: none;
+/* social icons  */
+
+.contact-us__social{
+
+    display: flex;
+    flex-direction: row; 
+    
 }
 
 .contact-us__svg{
 
     display: flex;
-    justify-content:center;
-    gap: 2rem;
-    margin: 2rem 0;  
+    flex-direction: column;
+    align-items: flex-start;
     
 }
 
-.contact-us__nav{
-
-    display: grid;
-    gap: 2rem;
-    padding: 1.5rem;
+.contact-us__icons .icon-holder{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
     
+}
+
+.icon-holder__label {
+
+margin-left: 2rem; 
+display: block;
+line-height: 1.5rem;   
+}
+
+
+@media screen and ( min-width: 1024px) {
+
+    .contact-us__icons{
+       display: flex;
+       flex-direction:row !;
+       justify-content: space-between;
+    }
+
+    .contact-us__icons .icon-holder{
+        flex-direction: column;
+    }
+    .icon-holder__label{
+
+        order: 2;
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+    }
 }
 
 .form__title{
@@ -468,4 +506,22 @@ input[type="email"]{
 .contact-us__text{
     border: none;
     background-color: #E8E8E8;
+}
+
+
+/* icons */
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon-container{
+    width: 62px;
+    height: 62px;
+    background-color:#f6f6f6;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
 }

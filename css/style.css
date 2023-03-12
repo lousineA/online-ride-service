@@ -355,23 +355,33 @@ background-color:var(--color-secondary-dark);
 /* contact-us */
 
 
-.contact-us{
 
-    padding: 2.5rem;
-    display: grid;
-}
 
 .contact-us__map{
     display: none;
 }
 
 
+.contact_us__map > img{
+
+    width: 100%;
+    height: auto;
+}
+
+
+.contact-us{
+    padding: 2.5rem;
+    display: grid;
+}
+
+
+
 @media screen and (min-width:1024px) {
 
 .contact-us{
+
 grid-template-areas: 
 
-/* "contact us text" */
 "form icons"
 "form map"
 "form social";
@@ -379,7 +389,9 @@ grid-template-areas:
 grid-template-columns: 30fr 70fr;
 
 }
+
 .contact-us__map{
+    grid-area:map;
     display: block;
 }
 
@@ -397,16 +409,10 @@ grid-template-columns: 30fr 70fr;
     grid-area:icons;
 }
 
-.contact_us__map {
-    grid-area:map;
-    display:block;
-    
-}
 
 .form__title{
     grid-area: form;
 }
-
 
 
 }
@@ -419,7 +425,23 @@ grid-template-columns: 30fr 70fr;
 
     display: flex;
     flex-direction: row; 
+    align-items: center;
+    justify-content:space-around;
     
+}
+
+@media screen and (min-width:1024px){
+
+    .contact-us__social{
+
+       justify-content: flex-start;
+    }
+
+    .contact-us__social .icon-container{
+
+        margin-left: 2rem;
+    }
+
 }
 
 .contact-us__svg{
@@ -451,6 +473,7 @@ line-height: 1.5rem;
        display: flex;
        flex-direction:row !;
        justify-content: space-between;
+       align-items: flex-end;
     }
 
     .contact-us__icons .icon-holder{
@@ -470,8 +493,7 @@ line-height: 1.5rem;
     border-radius: 20px;
     box-shadow: 0px 13px 19px 0px  #E5E5E5;
     padding: 2rem;
-    margin-top: 10rem;
-    
+    margin:1rem 2rem
 }
 
 .form__name{
@@ -525,3 +547,5 @@ input[type="email"]{
     cursor: pointer;
 
 }
+
+

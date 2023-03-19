@@ -673,3 +673,123 @@ height: auto;
  
     
 }
+
+
+/* Navbar  */
+
+
+.main-header{
+
+    background-color:var(--color-nav-bar);
+}
+
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+
+}
+
+.nav__list{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    /* align-items: center; */
+    margin-top: 2rem;
+    max-height:0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+
+}
+
+.nav__item{
+    margin-bottom: 1rem;
+    border-bottom:  1px solid #ccc;
+   
+}
+
+
+
+.nav.nav__expanded .nav__list {
+    max-height:100vh;
+    opacity: 1;
+    
+
+}
+
+.nav__item > a {
+
+    text-decoration: none;
+    color: #444;
+    display: block;
+    padding: 0.5rem 1rem;
+
+}
+
+.nav__item > a:hover{
+
+   color: var(--color-primary);
+   font-weight: bold;
+    
+}
+
+
+.nav__toggler{
+    background-color: darkgoldenrod;
+}
+
+
+/* .nav__item.cta {
+
+   font-size: 3rem; 
+   
+} */
+
+.nav__item.cta > a {
+
+    color: #FFFFFF;
+
+    font-size: 1.4rem; 
+}
+
+@media screen  and (min-width:768px) {
+
+    .nav {
+
+        padding: 0 2rem;
+    }
+
+    .nav__toggler{
+        display: none;
+    }
+
+    .nav__list {
+        flex-direction: row ;
+        align-items: center;
+        /* justify-content: space-around; */
+        width: auto;  
+         /* نمی خواهیم بیاد سطر بعدی  */
+         opacity: 1;
+         max-height: 100%; 
+         /* یعنی 100 درصد عرض پدرش باشد  */
+    
+    }
+
+    .nav__item{
+
+        margin-right: 3rem;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        border: 0;
+    }
+
+
+    
+}

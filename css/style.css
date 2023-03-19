@@ -741,10 +741,6 @@ height: auto;
 }
 
 
-.nav__toggler{
-    background-color: darkgoldenrod;
-}
-
 
 /* .nav__item.cta {
 
@@ -788,8 +784,39 @@ height: auto;
         margin-bottom: 0;
         font-size: 1.6rem;
         border: 0;
-    }
+    } 
+}
 
 
-    
+/* Toggler  */
+
+.nav__toggler{
+
+    cursor: pointer;
+}
+
+.bar {
+
+width: 25px;
+height: 3px;
+background-color: #000000;
+margin:5px 0;
+border-radius: 5px; 
+transition: all 0.4s ease-out;
+
+}
+
+.nav.nav__expanded .bar-one{
+
+    transform: rotate(-45deg) translate(-12px, 4px);
+}
+
+.nav.nav__expanded .bar-two{
+
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.nav.nav__expanded .bar-three{
+    transform: rotate(45deg) translate(-7px, 1px);;
 }

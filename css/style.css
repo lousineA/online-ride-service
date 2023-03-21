@@ -825,6 +825,21 @@ transition: all 0.4s ease-out;
 /* Hero section */
 
 
+
+
+
+.hero-wrapper{
+    position: absolute;
+    /* background-color: aquamarine; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 478px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
 .hero-section{
 
    width: 100%;
@@ -837,4 +852,103 @@ transition: all 0.4s ease-out;
 
     width: 100%;
     height: auto;
+}
+
+.intro-btn{
+    border-radius:12px;
+    background-image:linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center ; */
+    max-width: 300px;
+   
+}
+
+.intro-btn h1 {
+
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.h-hero-wrapper{
+    align-self: start;
+    /* text-align: start; */
+   display: flex;
+    /* justify-content: flex-start; */
+}
+
+.intro-btn h2 {
+
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+}
+
+.intro-btn__passenger{
+    background-color:#FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+     display:flex;
+    width: 260px;
+    padding: 14px;
+   
+    
+}
+
+.intro-btn__passenger p{
+    font-size: 1.4rem;
+}
+
+.intro-btn__passenger {
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.intro-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px){
+
+
+    .hero-wrapper{
+        justify-content: flex-start;
+    }
+    
+    .intro-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro-btn {
+        max-width: 580px;
+        padding: 25px;
+         border-radius: 20px;
+    }
+
+
+    .intro-btn h1{
+        font-size:4rem ;
+        align-self:self-start;
+    }
+
+    .intro-btn h2{
+        font-size: 2.4rem;
+        align-self:self-start;
+
+    }
+
+    .intro-btn__passenger{
+
+        width:260px;
+    }
 }

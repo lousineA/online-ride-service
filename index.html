@@ -10,199 +10,529 @@
 
     <title>Tapsi Project</title>
   </head>
-  <body>
-    <!-- <h1>Hello woerld</h1>
-    <h2>hello again</h2>
-    <p>what are you doing? Lets code day and night!</p> -->
+  <header class="main-header">
+    <nav class="nav container">
+      <a href="#">
+        <img src="Assets/images/tapsi.logo.svg" alt="tapsi-logo"
+      /></a>
 
-    <!-- <section class="feature container">
-      <div class="feature__pic">
-        <img src="./Assets/images/computer.pic" alt="computer pic" />
+      <div class="nav__toggler">
+        <div class="bar bar-one"></div>
+        <div class="bar bar-two"></div>
+        <div class="bar bar-three"></div>
       </div>
 
-      <div class="feature__detail">
-        <h2 class="feature__title">Tepsi services for Businesses</h2>
-        <p class="feature__text">
-          Tapsi Enterprise Panel is a web-based system that easily allows
-          businesses and organizations to request an unlimited number of cars
-          and couriers at the same time.And using it, you can easily manage
-          intra-city missions and sending your goods.
-        </p>
-        <button class="btn btn--primary">Login and Register</button>
-      </div>
-    </section> -->
+      <ul class="list nav__list">
+        <li class="nav__item"><a href="#">Support</a></li>
+        <li class="nav__item"><a href="#">Career Opportunities</a></li>
+        <li class="nav__item"><a href="#">Weblog</a></li>
+        <li class="nav__item"><a href="#">Videos</a></li>
+        <li class="nav__item cta">
+          <a href="#" class="btn btn--primary">Tapsi Download</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- <section class="block-plan container">
-      <div class="plan">
-        <div class="card card--special">
-          <header class="card__header">
-            <span class="plan__introduction">
-              <span class="plan__name">Special offer</span>
-              <span class="badge badge-primary">20% Off</span>
-            </span>
-            <span class="plan__price">490,000 </span>
-            <span class="plan__billing-cycle">USD/Month</span>
-            <span class="plan__description">Luxury car services</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Business class</li>
-              <li class="list__item">No time limitation</li>
-              <li class="list__item">Unlimited service</li>
-            </ul>
-            <button class="btn btn--secondary btn--block">
-              Login and Registeration
-            </button>
+  <section class="hero-section">
+    <picture>
+      <source
+        srcset="https://tapsi.ir/images/home/banner.webp"
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="https://tapsi.ir/images/home/banner.jpg"
+        type="image/jpg"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="https://tapsi.ir/images/home/banner-mobile.webp"
+        type="image/webp"
+        media="(max-width: 768px)"
+      />
+      <source
+        srcset="https://tapsi.ir/images/home/banner-mobile.jpg"
+        type="image/jpg"
+        media="(max-width: 768px)"
+      />
+      <img
+        alt="banner"
+        src="https://tapsi.ir/images/home/banner.jpg"
+        class="banner-img"
+      />
+    </picture>
+
+    <div class="hero-wrapper">
+      <div class="intro-btn">
+        <h1>Tapsi</h1>
+        <h2>Car and courier request application</h2>
+        <div class="intro-wrapper">
+          <div class="intro-btn__passenger">
+            <span class="icons"><i class="fa-solid fa-arrow-down"></i></span>
+            <p>Passengers application download</p>
           </div>
-        </div>
-      </div>
 
-      <div class="plan">
-        <div class="card card--primary">
-          <header class="card__header">
-            <span class="plan__introduction">
-              <span class="plan__name">Economy</span>
-              <span class="badge badge-secondary">15% Off</span>
-            </span>
-            <span class="plan__price">390,000 </span>
-            <span class="plan__billing-cycle">USD/Month</span>
-            <span class="plan__description">Classic car services</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Best choice</li>
-              <li class="list__item">User-friendly</li>
-              <li class="list__item">Daily service</li>
-            </ul>
-            <button class="btn btn--primary btn--block">
-              Login and registeration
-            </button>
+          <div class="intro-btn__passenger">
+            <span class="icons"
+              ><i class="fa-solid fa-person-walking"></i
+            ></span>
+            <p>Passengers Web application</p>
           </div>
-        </div>
-      </div>
 
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <span class="plan__introduction">
-              <span class="plan__name">Regular</span>
-              <span class="badge badge-primary">10% Off</span>
-            </span>
-            <span class="plan__price">290,000 </span>
-            <span class="plan__billing-cycle">USD/Month</span>
-            <span class="plan__description">Regular car services</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Mediocre</li>
-              <li class="list__item">Time limitation</li>
-              <li class="list__item">Regular service</li>
-            </ul>
-            <button class="btn btn--secondary btn--block">
-              Login and registeration
-            </button>
+          <div class="intro-btn__passenger intro-btn-dark">
+            <span class="icons"><i class="fa-solid fa-arrow-down"></i></span>
+            <p>Drivers application download</p>
           </div>
-        </div>
-      </div>
-    </section>
-
- -->
-    <section class="container block">
-      <div class="contact-us">
-      <!-- <div class="contact-us__info-text">
-        <h2>Contact us</h2>
-        <p>
-          We would love to hear from you! If you have any questions, comments,
-          or suggestions, please feel free to contact us using the form below or
-          by using the email address or phone number provided.
-        </p>
-      </div> -->
-      
-      <div class="contact-us__icons">
-        <div class="icon-holder">
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="Assets/images/svg.images.svg#location"></use>
-            </svg>
-          </span>
-          <span class="icon-holder__label"
-            >6386 Spring St undefined Anchorage, Georgia 12473 United
-            States</span
-          >
-        </div>
-
-        <div class="icon-holder">
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="Assets/images/svg.images.svg#mobile"></use>
-            </svg>
-          </span>
-          <span class="icon-holder__label">(843) 555-0130</span>
-        </div>
-
-        <div class="icon-holder">
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="Assets/images/svg.images.svg#mail"></use>
-            </svg>
-          </span>
-          <span class="icon-holder__label">willie.jennings@example.com</span>
-        </div>
-      </div>
-
-
-      <div class="contact-us__map">
-        <img
-          src="./Assets/images/@ map screen.png"
-          alt="map"
-          class="contact-us__map"/>
-        </div>
-        <div class="contact-us__social">
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="Assets/images/svg.images.svg#Twitter"></use>
-            </svg>
-          </span>
-
-          
-          
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="Assets/images/svg.images.svg#facebook"></use>
-            </svg>
-          </span>
-
-
-          
-          <span class="icon-container">
-            <svg class="icon">
-              <use xlink:href="Assets/images/svg.images.svg#linkedin"></use>
-            </svg>
-          </span>
-          
-        </div>
-        <div class="contact-us__form">
-          <div class="form-wrapper">
-            <h3>Contact Us</h3>
-            <form>
-              <label for="name"></label>
-              <input type="text" class="name" placeholder="Your Name" />
-              <label for="email"></label>
-              <input type="email" class="email" placeholder="Your Email" />
-              <textarea
-                name="contact-us__text"
-                class="contact-us__text"
-                cols="30"
-                rows="10"
-                placeholder="Type Here"
-              ></textarea>
-              <button class="btn btn--primary">Send</button>
-            </form>
+          <div class="intro-btn__passenger intro-btn-dark">
+            <span class="icons"><i class="fa-solid fa-car"></i></span>
+            <p>Driver registeration</p>
           </div>
-        </div> 
+          <i class="fa-solid fa-person-walking"></i>
+          <span class="icons"><i class="fa-solid fa-car"></i></span>
+        </div>
       </div>
-       
     </div>
-    </section>
-  </body>
+  </section>
+
+  <section class="services container block">
+    <h2 class="services__title block-heading">Tapsi Services</h2>
+    <div class="services__tabs">
+      <a class="tab active" data-tab-target="nav-classic-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-classic.png"
+          alt="tapsi-classic-icon"
+        />
+        <p>Tapsi classic</p>
+      </a>
+
+      <a class="tab" data-tab-target="nav-tel-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-tel.png"
+          aria-label="tel service icon"
+          alt="tapsi-tel-icon"
+        />
+        <p>Tapsi phone</p>
+      </a>
+
+      <a class="tab" data-tab-target="nav-line-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-line.png"
+          aria-label="line service icon"
+          alt="tapsi-line-icon"
+        />
+        <p>Tapsi line</p>
+      </a>
+      <a class="tab" data-tab-target="nav-moto-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-motopeyk.png"
+          aria-label="motopeyk service icon"
+          alt="moto-icon"
+        />
+        <p>Moto delivery</p>
+      </a>
+
+      <a class="tab" data-tab-target="nav-car-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-autopeyk.png"
+          aria-label="autopeyk service icon"
+          alt="autopeyk-icon"
+        />
+        <p>Car Delivery</p>
+      </a>
+
+      <a class="tab" data-tab-target="nav-plus-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-plus.png"
+          aria-label="plus service icon"
+          alt="tapsi-plus-icon"
+        />
+        <p>Tapsi plus</p>
+      </a>
+      <a class="tab" data-tab-target="nav-partner-tab">
+        <img
+          src="https://tapsi.ir/images/home/cc-hamyar.png"
+          aria-label="hamyar service icon"
+          alt="hamyar-icon"
+        />
+        <p>Partner</p>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="tab-content active">
+        <div class="feature__pic">
+          <img
+            src="https://tapsi.ir/images/home/illus-classic.png"
+            alt="classic"
+          />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Classis Plan</h3>
+          <p class="feature__text">
+            With Classic Tapsi service, you have a dedicated car to reach your
+            destination. Classic Tepsi is a quick and easy way to travel within
+            the city at any time of the day. In this service, you can specify
+            two or more destinations and stop on the way.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-tel-tab">
+        <div class="feature__pic">
+          <img src="https://tapsi.ir/images/home/illus-tel.webp" alt="phone" />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Tepsi Phone</h3>
+          <p class="feature__text">
+            Tepsi service by phone or 1630, allows you to request a car without
+            the need for the Internet and the application. This phone taxi
+            service is suitable when you do not have access to the Internet or
+            the application for any reason. Also, Tapsi phone service is a
+            suitable solution for people who are not comfortable working with
+            mobile applications
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-line-tab">
+        <div class="feature__pic">
+          <img
+            src="https://tapsi.ir/images/home/illus-line.png"
+            alt="tapsi line"
+          />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Tepsi line</h3>
+          <p class="feature__text">
+            Tapsi Line is a service that allows you to travel together. In this
+            service, you will be traveling with another passenger who is
+            traveling with you, and the cost of your trip will be shared.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-moto-tab">
+        <div class="feature__pic">
+          <img
+            src="https://tapsi.ir/images/home/illus-motopeyk.png"
+            alt="Moto"
+          />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Moto delivery</h3>
+          <p class="feature__text">
+            Tapsi Enterprise Panel is a web-based system that easily allows
+            businesses and organizations to request an unlimited number of cars
+            and couriers at the same time.And using it, you can easily manage
+            intra-city missions and sending your goods.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-car-tab">
+        <div class="feature__pic">
+          <img
+            src="https://tapsi.ir/images/home/illus-autopeyk.png"
+            alt="car delivery"
+          />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Car delivery</h3>
+          <p class="feature__text">
+            Tapsi car delivery is a service to send your packages by car. This
+            service is suitable for when your packages cannot be sent by motor
+            or when they need more care during transportation. In this service,
+            it is also possible to monitor the location of the parcel until it
+            reaches its destination.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-plus-tab">
+        <div class="feature__pic">
+          <img src="https://tapsi.ir/images/home/illus-plus.png" alt="plus" />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Tepsi plus</h3>
+          <p class="feature__text">
+            Tapsi Plus service, is a car with a higher model and shorter
+            lifespan will follow you. Also, the drivers of this service have
+            received the highest rating from passengers. In this service, which
+            is currently active in Tehran, it is possible to specify several
+            destinations or stop during the trip.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-partner-tab">
+        <div class="feature__pic">
+          <img
+            src="https://tapsi.ir/images/home/illus-hamyar.png"
+            alt="partner"
+          />
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">Partner</h3>
+          <p class="feature__text">
+            Tapsi's assistant service will buy for you. Just select your desired
+            store as the source and enter your shopping list into the app. These
+            purchases can be from your desired supermarket or pharmacy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature container block">
+    <div class="feature__pic">
+      <img src="./Assets/images/computer.pic" alt="computer pic" />
+    </div>
+
+    <div class="feature__detail">
+      <h2 class="feature__title">Tepsi services for Businesses</h2>
+      <p class="feature__text">
+        Tapsi Enterprise Panel is a web-based system that easily allows
+        businesses and organizations to request an unlimited number of cars and
+        couriers at the same time.And using it, you can easily manage intra-city
+        missions and sending your goods.
+      </p>
+      <button class="btn btn--primary">Login and Register</button>
+    </div>
+  </section>
+
+  <section class="feature container">
+    <div class="feature__pic">
+      <img src="./Assets/images/computer.pic" alt="computer pic" />
+    </div>
+
+    <div class="feature__detail">
+      <h2 class="feature__title">Tepsi services for Businesses</h2>
+      <p class="feature__text">
+        Tapsi Enterprise Panel is a web-based system that easily allows
+        businesses and organizations to request an unlimited number of cars and
+        couriers at the same time.And using it, you can easily manage intra-city
+        missions and sending your goods.
+      </p>
+      <button class="btn btn--primary">Login and Register</button>
+    </div>
+  </section>
+
+  <section class="block-plan container block">
+    <div class="plan">
+      <div class="card card--special">
+        <header class="card__header">
+          <span class="plan__introduction">
+            <span class="plan__name">Special offer</span>
+            <span class="badge badge-primary">20% Off</span>
+          </span>
+          <span class="plan__price">490,000 </span>
+          <span class="plan__billing-cycle">USD/Month</span>
+          <span class="plan__description">Luxury car services</span>
+        </header>
+        <div class="card__body">
+          <ul class="list list--tick">
+            <li class="list__item">Business class</li>
+            <li class="list__item">No time limitation</li>
+            <li class="list__item">Unlimited service</li>
+          </ul>
+          <button class="btn btn--secondary btn--block">
+            Login and Registeration
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan">
+      <div class="card card--primary">
+        <header class="card__header">
+          <span class="plan__introduction">
+            <span class="plan__name">Economy</span>
+            <span class="badge badge-secondary">15% Off</span>
+          </span>
+          <span class="plan__price">390,000 </span>
+          <span class="plan__billing-cycle">USD/Month</span>
+          <span class="plan__description">Classic car services</span>
+        </header>
+        <div class="card__body">
+          <ul class="list list--tick">
+            <li class="list__item">Best choice</li>
+            <li class="list__item">User-friendly</li>
+            <li class="list__item">Daily service</li>
+          </ul>
+          <button class="btn btn--primary btn--block">
+            Login and registeration
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan">
+      <div class="card card--secondary">
+        <header class="card__header">
+          <span class="plan__introduction">
+            <span class="plan__name">Regular</span>
+            <span class="badge badge-primary">10% Off</span>
+          </span>
+          <span class="plan__price">290,000 </span>
+          <span class="plan__billing-cycle">USD/Month</span>
+          <span class="plan__description">Regular car services</span>
+        </header>
+        <div class="card__body">
+          <ul class="list list--tick">
+            <li class="list__item">Mediocre</li>
+            <li class="list__item">Time limitation</li>
+            <li class="list__item">Regular service</li>
+          </ul>
+          <button class="btn btn--secondary btn--block">
+            Login and registeration
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section  class="container contact-us-text">
+   <div class="contact-us__info-text block">
+      <h2>Contact us</h2>
+      <p>
+        We would love to hear from you! If you have any questions, comments,
+        or suggestions, please feel free to contact us using the form below or
+        by using the email address or phone number provided.
+      </p>
+    </div> 
+  </section>
+
+  <section class="container block">
+    <div class="contact-us">
+    
+    <div class="contact-us__icons">
+      <div class="icon-holder">
+        <span class="icon-container">
+          <svg class="icon">
+            <use xlink:href="Assets/images/svg.images.svg#location"></use>
+          </svg>
+        </span>
+        <span class="icon-holder__label"
+          >6386 Spring St undefined Anchorage, Georgia 12473 United
+          States</span
+        >
+      </div>
+
+      <div class="icon-holder">
+        <span class="icon-container">
+          <svg class="icon">
+            <use xlink:href="Assets/images/svg.images.svg#mobile"></use>
+          </svg>
+        </span>
+        <span class="icon-holder__label">(843) 555-0130</span>
+      </div>
+
+      <div class="icon-holder">
+        <span class="icon-container">
+          <svg class="icon">
+            <use xlink:href="Assets/images/svg.images.svg#mail"></use>
+          </svg>
+        </span>
+        <span class="icon-holder__label">willie.jennings@example.com</span>
+      </div>
+    </div>
+
+
+    <div class="contact-us__map">
+      <img
+        src="./Assets/images/@ map screen.png"
+        alt="map"
+        class="contact-us__map"/>
+      </div>
+      <div class="contact-us__social">
+        <span class="icon-container">
+          <svg class="icon">
+            <use xlink:href="Assets/images/svg.images.svg#Twitter"></use>
+          </svg>
+        </span>
+
+        
+        
+        <span class="icon-container">
+          <svg class="icon">
+            <use xlink:href="Assets/images/svg.images.svg#facebook"></use>
+          </svg>
+        </span>
+
+
+        
+        <span class="icon-container">
+          <svg class="icon">
+            <use xlink:href="Assets/images/svg.images.svg#linkedin"></use>
+          </svg>
+        </span>
+        
+      </div>
+      <div class="contact-us__form">
+        <div class="form-wrapper">
+          <h3>Contact Us</h3>
+          <form>
+            <label for="name"></label>
+            <input type="text" class="name" placeholder="Your Name" />
+            <label for="email"></label>
+            <input type="email" class="email" placeholder="Your Email" />
+            <textarea
+              name="contact-us__text"
+              class="contact-us__text"
+              cols="30"
+              rows="10"
+              placeholder="Type Here"
+            ></textarea>
+            <button class="btn btn--primary">Send</button>
+          </form>
+        </div>
+      </div> 
+    </div>
+     
+  </div>
+  </section>
+
+
+  <footer class="main-footer">
+    <div class="container footer">
+      <div class="footer__item">
+        <h6>Tapsi</h6>
+
+        <a href="#">Tapsi Weblog</a>
+        <a href="#">Careers </a>
+        <a href="#">Contact us</a>
+        <a href="#">Logo and corporate identity</a>
+        <a href="#">Introducing Tapsi to drivers</a>
+      </div>
+
+      <div class="footer__item">
+        <h6>Passengers</h6>
+        <a href="#">Tapsi Blog</a>
+        <a href="#">Download the passenger's app</a>
+        <a href="#">Web version</a>
+        <a href="#">Passengers FAQ</a>
+        <a href="#">Costumers forum </a>
+      </div>
+      <div class="footer__item">
+        <h6>Drivers</h6>
+        <a href="#">Drivers registeration</a>
+        <a href="#">Download the driver's app</a>
+        <a href="#">Drivers FAQ</a>
+        <a href="#">Drivers forum </a>
+      </div>
+      <div class="footer__item">
+        <h6>Businesses</h6>
+        <a href="#">Tepsi organizational panel</a>
+        <a href="#">Purchase credit and discount codes</a>
+        <a href="#">Get API</a>
+        <a href="#">Terms and conditions</a>
+      </div>
+      <div class="footer__item enemad">
+        <div class="footer__enemad">
+          <img src="Assets/images/logo_enemad.png" alt="enemad" />
+        </div>
+        <div class="footer__enemad">
+          <img src="Assets/images/etehadiye.png" alt="enemad" />
+        </div>
+      </div>
+     
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <body></body>
 </html>

@@ -1023,6 +1023,19 @@ margin:4rem 0;
     margin-top: ren;
 }
 
+
+.tab-content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature__detail{
+
+width: 100%;
+}
+
 @media screen and (min-width:1024px){
 
     .services__tabs .tab > p {
@@ -1045,4 +1058,22 @@ margin-bottom: 30px;
     display: block;
 }
 
+.feature__detail{
+
+    width: 50%;
+
+}
+}
+
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active{
+    display: flex;
+}
+
+.tab.active{
+    opacity: 1;
 }

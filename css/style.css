@@ -892,22 +892,29 @@ transition: all 0.4s ease-out;
     background-color:#FFFFFF;
     border-radius: 12px;
     margin-bottom: 2rem;
-     display:flex;
+    display:flex;
     width: 260px;
     padding: 14px;
-   
-    
+    justify-content:space-between;
+    cursor: pointer;
 }
 
 .intro-btn__passenger p{
     font-size: 1.4rem;
 }
 
-.intro-btn__passenger {
+/* .intro-btn__passenger {
     cursor: pointer;
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; 
+  } */
+
+  .intro-btn__passenger.intro-btn-dark{
+
+    background-color:transparent;
+    color: #FFFFFF;
+    border: 2px solid  white;
   }
 
 .intro-wrapper{

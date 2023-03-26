@@ -748,7 +748,9 @@ height: auto;
 
 }
 
-
+.nav__item.cta >a:hover{
+    color: antiquewhite;
+}
 
 
  /* .nav__item.cta {
@@ -848,25 +850,26 @@ transition: all 0.4s ease-out;
 .hero-wrapper{
     position: absolute;
     /* background-color: aquamarine; */
-    /* top: 0;
-    right: 0; */
+    top: 0;
+    right: 0;
     width: 100%;
-    height: 478px; 
+    height: 475px; 
     display: flex;
     justify-content: center; 
     align-items: center;
-    z-index: 2;
+    z-index:2;
 }
 
 .hero-section{
 
+position: relative;
    width: 100%;
    height: 478px; 
 }
 
 /* عکس ما باید پر شود  */
 
-.hero-section img{
+.hero-section .banner-img{
 
     width: 100%;
     height: auto;
@@ -880,7 +883,7 @@ transition: all 0.4s ease-out;
     flex-direction: column;
     align-items: center;
     /* justify-content: center ; */
-    max-width: 300px;
+    max-width: 310px;
    
 }
 
@@ -892,11 +895,12 @@ transition: all 0.4s ease-out;
     margin-bottom: 2rem;
 }
 
-.h-hero-wrapper{
+.hero-wrapper{
     align-self: start;
-    /* text-align: start; */
+    text-align: start;
    display: flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
+    align-items:start;
 }
 
 .intro-btn h2 {

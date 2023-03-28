@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Tapsi Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <header class="main-header">
     <nav class="nav container">
@@ -76,7 +77,7 @@
 
 
     <div class="hero-wrapper">
-      <div class="intro-btn">
+      <div class="intro-btn" data-aos="flip-up"  data-aos-duration="1000" >
         <h1>Tapsi</h1>
         <h2>Car and courier request application</h2>
         <div class="intro-wrapper">
@@ -109,7 +110,8 @@
 
   <section class="services container block">
     <h2 class="services__title block-heading">Tapsi Services</h2>
-    <div class="services__tabs">
+    <div class="services__tabs" data-aos="zoom-in-left" data-aos-delay="80"
+    data-aos-duration="1000" >
       <a class="tab active" data-tab-target="nav-classic-tab">
         <img
           src="https://tapsi.ir/images/home/cc-classic.png"
@@ -290,12 +292,13 @@
     </div>
   </section>
 
-  <section class="feature container block">
+  <section class="feature container block" data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom"  data-aos-duration="2000">
     <div class="feature__pic">
       <img src="./Assets/images/computer.pic" alt="computer pic" />
     </div>
 
-    <div class="feature__detail">
+    <div class="feature__detail" >
       <h2 class="feature__title">Tepsi services for Businesses</h2>
       <p class="feature__text">
         Tapsi Enterprise Panel is a web-based system that easily allows
@@ -307,7 +310,8 @@
     </div>
   </section>
 
-  <section class="feature container">
+  <section class="feature container" data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom"  data-aos-duration="2000">
     <div class="feature__pic">
       <img src="./Assets/images/computer.pic" alt="computer pic" />
     </div>
@@ -545,6 +549,10 @@
      
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/main.js"></script>
   <body></body>
 </html>

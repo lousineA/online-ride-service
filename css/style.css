@@ -16,6 +16,7 @@
 --heading-color:#000000;
 --body-color:#333333;
 --color-white:#FFFFFF;
+--avatar-size:50px;
 
 }
 
@@ -1325,4 +1326,56 @@ border-radius: 32px;
     color: var(--color-primary);
  }
 
+
+ /* Avatar */
+
+
+ .avatar-group{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+ }
+
+ .avatar-group .avatar{
+
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+    margin-right: -20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position:relative;
+
+ }
  
+ .avatar-hidden{
+
+width: var(--avatar-size);
+height: var(--avatar-size);
+background-color: var(--color-primary);
+color: #FFFFFF;
+border-radius: 50%;
+display: flex;
+align-items:center;
+justify-content: center;
+cursor: pointer;
+position: relative;
+ }
+
+
+ .avatar:hover{
+
+    transform: translate(-10px);
+ }
+
+ .slide-suggest{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: var(--color-primary);
+    display: inline-block;
+ }

@@ -306,6 +306,8 @@ background-color:var(--color-secondary-dark);
     
 }
 
+
+
 @media screen and (min-width:1024px){
 
     .feature{
@@ -350,6 +352,7 @@ background-color:var(--color-secondary-dark);
 .feature__detail{
 
     margin-left: 40px;
+    
 }
 
 
@@ -1061,7 +1064,7 @@ margin:4rem 0;
 
 .services .feature__pic {
     display: none;
-    margin-top: ren;
+    margin-top: 2rem;
 }
 
 
@@ -1101,7 +1104,7 @@ margin-bottom: 30px;
 
 .feature__detail{
 
-    width: 50%;
+    width: 60%;
 
 }
 }
@@ -1130,6 +1133,14 @@ margin-bottom: 30px;
 
 
 /* TRAVEL slides */
+
+
+.travel__awards h2{
+
+   margin: 2rem 1.5rem;
+   display: flex;
+   justify-content:space-around;
+}
 
 .travel__slides{
     display:flex;
@@ -1172,7 +1183,7 @@ border-radius: 32px;
     border-radius: 32px;
     padding: 1rem 2rem;
     transform: translateY(-60px);
-    width: 80%;
+    width: 85%;
 } 
 
 .travel-slide{
@@ -1381,6 +1392,21 @@ position: relative;
  }
 
  /* Radio button section*/
+
+
+
+ .button-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+ 
+
+ .driver__selection h2 {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+ }
 
  .select-type{
     display: flex;
